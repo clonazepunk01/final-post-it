@@ -1,0 +1,95 @@
+html,body {
+    background-image: url(https://th.bing.com/th/id/R.36356355009233450e38a4dec1e8327c?rik=MWLR7dYwaLTF8Q&pid=ImgRaw&r=0);
+    background-position: center;
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.post-it-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-it {
+    background-color: #fef9e7;
+    padding: 10px;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: calc(25% - 20px);
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.post-it.importante {
+    background-color: #f8c9c9; 
+    border-color: #e79797;
+}
+
+.post-it h5 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.post-it p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.post-it .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+    color: #999;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Tres columnas en pantallas grandes */
+
+@media (max-width: 1200px) {
+    .post-it {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Dos columnas en pantallas medianas */
+
+@media (max-width: 992px) {
+    .post-it {
+        width: calc(50% - 20px); 
+    }
+}
+
+ /* Una columna por fila para celulares */
+
+@media (max-width: 768px) {
+    .post-it {
+        width: calc(100% - 20px); 
+    }
+}
